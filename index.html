@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grading Calculate System</title>
+    <script src="./calculate.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Grading Calculate System</h1>
+    </div>
+    <div class="container">
+      <div class="left">
+        <div class="input">
+          <div>
+            <label for="physics">Physics</label>
+            <input type="text" name="physics" id="physics" />
+          </div>
+          <div>
+            <label for="chemistry">Chemistry</label>
+            <input type="text" name="chemistry" id="chemistry" />
+          </div>
+          <div>
+            <label for="math">Math</label>
+            <input type="text" name="math" id="math" />
+          </div>
+          <div>
+            <label for="biology">Biology</label>
+            <input type="text" name="biology" id="biology" />
+          </div>
+          <div>
+            <label for="eng">English</label>
+            <input type="text" name="eng" id="eng" />
+          </div>
+          <div class="button">
+            <button onclick="calculate()">Calculate</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <table>
+          <tr>
+            <th>Total Marks</th>
+            <td>500</td>
+          </tr>
+          <tr>
+            <th>Obtained Marks</th>
+            <td id="obtainedMarks"></td>
+          </tr>
+          <tr>
+            <th>Percentage</th>
+            <td id="per"></td>
+          </tr>
+          <tr>
+            <th>Grade</th>
+            <td id="grade"></td>
+          </tr>
+          <tr>
+            <th>Review</th>
+            <td id="review"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
