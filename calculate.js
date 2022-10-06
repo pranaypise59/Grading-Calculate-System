@@ -20,9 +20,11 @@ function calculate() {
 
     // reviewing whether is passed or failed
     if (a > 40 && b > 40 && c > 40 && d > 40 && e > 40) {
+      alert('Congrats !! You have passed the Examination');
       document.getElementById('review').innerHTML =
         '<span style="color:green;background-color:white;font-weight:bold">Passed</span>';
     } else {
+      alert('Opps !! You have Failed the Examination')
       document.getElementById('review').innerHTML =
         '<span style="color:red;background-color:white; font-weight:bold;padding:3px 8px">Failed</span>';
     }
